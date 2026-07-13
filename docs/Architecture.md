@@ -74,3 +74,13 @@ Planned data includes:
 - File metadata
 
 The initial database will run locally. Amazon RDS for PostgreSQL is planned for a later AWS deployment phase.
+
+## Technology Decisions
+
+| Component | Technology | Rationale |
+|-----------|------------|-----------|
+| Frontend | React with TypeScript | Modern, component-based UI with strong type safety and a large ecosystem. |
+| Backend | ASP.NET Core Web API | Aligns with existing C# expertise and provides a robust framework for building RESTful services. |
+| ORM | Entity Framework Core | Simplifies database access, supports code-first development, and integrates well with ASP.NET Core. |
+| Database | PostgreSQL | Open-source relational database with strong performance and compatibility with Amazon RDS. |
+| Cloud Platform | Amazon Web Services (AWS) | Supports the project's learning goals while providing scalable cloud infrastructure for future deployment. |
