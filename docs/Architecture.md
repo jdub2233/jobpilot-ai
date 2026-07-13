@@ -111,6 +111,7 @@ ASP.NET Core Web API
   v
 PostgreSQL
 
+
 ## Planned AWS Deployment Architecture
 
 AWS deployment is planned for a later project phase. No AWS application infrastructure has been implemented yet.
