@@ -1,5 +1,33 @@
 # Week of July 20
 
+# Weekly Engineering Plan
+
+Sprint: Sprint 0
+Week: July 20–24
+
+## Weekly Goals
+
+Project
+- Finish Domain Model
+- Design Database
+- Begin ASP.NET Core Solution
+
+AWS
+- Complete Stephane Section 8
+- Score 80%+ on ELB/ASG Practice Questions
+
+Portfolio
+- Update Architecture Docs
+- Push 3 meaningful Git commits
+
+Success Criteria
+
+✓ Domain Model Complete
+✓ Database Design Complete
+✓ Section 8 Complete
+✓ Documentation Updated
+✓ GitHub Current
+
 ## Monday
 AWS:
 - Stephane Section 9
