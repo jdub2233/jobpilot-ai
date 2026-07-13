@@ -1,4 +1,4 @@
-# Mentor Design Decisions (MDD)
+# AI Design Decisions (AIDD)
 
 Version: 1.0.0
 
