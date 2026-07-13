@@ -31,7 +31,7 @@ Each decision should contain:
 
 ---
 
-# MDD-001
+# AIDD-001
 
 ## Title
 
@@ -101,7 +101,7 @@ Review after completion of the SAA-C03 certification.
 
 ---
 
-# MDD-002
+# AIDD-002
 
 ## Title
 
@@ -169,7 +169,7 @@ Review after several AWS labs.
 
 ---
 
-# MDD-003
+# AIDD-003
 
 ## Title
 
@@ -226,7 +226,7 @@ Cons
 
 ---
 
-# MDD-004
+# AIDD-004
 
 ## Title
 
@@ -284,7 +284,7 @@ Cons
 
 ---
 
-# MDD-005
+# AIDD-005
 
 ## Title
 
@@ -324,7 +324,7 @@ Review after JobPilot AI reaches Version 1.
 
 ---
 
-# MDD-006
+# AIDD-006
 
 ## Title
 
