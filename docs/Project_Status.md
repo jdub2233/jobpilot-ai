@@ -1,5 +1,3 @@
-# JobPilot AI Project Status
-
 ## Current Sprint
 
 Sprint 0
@@ -14,7 +12,7 @@ Foundation & Planning
 
 ## Current Milestone
 
-Define the application architecture
+Create the initial domain model and database design
 
 ## Completed Milestones
 
@@ -24,14 +22,15 @@ Define the application architecture
 - Establish the GitHub repository structure
 - Create the engineering documentation structure
 - Create the AI Mentor documentation
+- Define the application architecture
 
 ## Current Task
 
-Create `docs/03_Architecture.md`
+Create the initial domain model and database design
 
 ## Next Task
 
-Create the initial domain model and database design
+Design the Entity Framework Core entities and relationships
 
 ## Blockers
 
