@@ -110,3 +110,29 @@ ASP.NET Core Web API
   | Entity Framework Core
   v
 PostgreSQL
+
+## Planned AWS Deployment Architecture
+
+AWS deployment is planned for a later project phase. No AWS application infrastructure has been implemented yet.
+
+The initial learning deployment is expected to use:
+
+- Amazon EC2 to host the ASP.NET Core Web API
+- Amazon RDS for PostgreSQL to host the relational database
+- Amazon S3 to store uploaded resumes and job-description files
+- Amazon CloudWatch for application logs, metrics, and alarms
+- AWS Identity and Access Management (IAM) for permissions and service access
+- AWS Systems Manager Parameter Store or AWS Secrets Manager for sensitive configuration
+
+Future portfolio-quality improvements may include:
+
+- An Application Load Balancer
+- Auto Scaling
+- Amazon Cognito for authentication
+- Amazon CloudFront for content delivery
+- Amazon Route 53 for DNS
+- Amazon SQS and AWS Lambda for background processing
+- Infrastructure as Code
+- Automated deployment through GitHub Actions
+
+These services will be introduced only when they solve a documented application, security, availability, or operational requirement.
