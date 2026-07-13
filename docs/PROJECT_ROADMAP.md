@@ -109,3 +109,30 @@ Improve documentation, testing, automation, cost optimization, and presentation 
 - Refine deployment procedures
 - Produce portfolio screenshots and demos
 - Prepare interview-ready documentation
+
+## Current Focus
+
+**Current Sprint:** Sprint 0
+
+**Current Day:** Day 2
+
+**Current Objective:**
+Create the foundational project documentation and establish the overall project plan before beginning application development.
+
+---
+
+## Phase Progress
+
+| Phase | Status |
+|-------|--------|
+| Phase 1 – Foundation & Planning | 🟡 In Progress |
+| Phase 2 – Core Application Development | ⚪ Planned |
+| Phase 3 – AWS Cloud Deployment | ⚪ Planned |
+| Phase 4 – Cloud Enhancements | ⚪ Planned |
+| Phase 5 – Portfolio Polish | ⚪ Planned |
+
+---
+
+## Next Milestone
+
+Define the initial application architecture and document the high-level system design.
