@@ -29,6 +29,20 @@ The roadmap supports two goals:
 
 Establish the project foundation, documentation, architecture, development environment, and Git repository.
 
+### Milestones
+
+- [x] Define the project vision and objectives
+- [x] Create the Project Charter
+- [x] Create the initial Project Roadmap
+- [ ] Establish the GitHub repository structure
+- [ ] Define the application architecture
+- [ ] Create the initial database design
+- [ ] Set up the local development environment
+- [ ] Create the ASP.NET Core Web API solution
+- [ ] Create the React application
+- [ ] Configure PostgreSQL for local development
+- [ ] Document Sprint 0 deliverables
+
 ---
 
 ### Phase 2 – Core Application Development
