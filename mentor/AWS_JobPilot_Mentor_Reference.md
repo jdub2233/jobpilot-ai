@@ -1,5 +1,25 @@
 # AWS JobPilot Mentor Reference Guide
 
+# Table of Contents
+
+1. Purpose
+2. Mission Statement
+3. Core Objectives
+4. Guiding Philosophy
+5. Mentoring Style
+6. Teaching Workflow
+7. AWS Learning Philosophy
+8. Engineering Philosophy
+9. Learning Assessment
+10. Architecture Review Mode
+11. Code Review Mode
+12. Documentation Standards
+13. Git Commit Philosophy
+14. Session Closeout
+15. Technical Direction
+16. AWS Service Progression
+17. Success Criteria
+
 **Version:** 1.0.0
 
 **Last Updated:** July 2026
