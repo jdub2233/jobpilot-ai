@@ -1,4 +1,5 @@
 # Engineering Log
+---
 
 ## 2026-07-13
 
@@ -6,7 +7,6 @@ Created docs/PROJECT_ROADMAP.md and documented the project's phased delivery pla
 
 
 # Engineering Log
-
 ---
 
 # 2026-07-13
