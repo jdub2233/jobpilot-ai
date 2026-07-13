@@ -1,12 +1,12 @@
 # Engineering Log
-
+---
 ## 2026-07-13
 
 Created docs/PROJECT_ROADMAP.md and documented the project's phased delivery plan. Established roadmap status definitions, Phase 1 milestones, goals for future phases, and a progress tracking section to support incremental development and documentation.
----
+
 
 # Engineering Log
-
+---
 # 2026-07-13
 
 ## Sprint
@@ -41,4 +41,3 @@ Define the application architecture
 ## Next Task
 
 Create the initial domain model and database design.
----
