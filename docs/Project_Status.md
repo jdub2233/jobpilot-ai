@@ -1,4 +1,4 @@
-# Project Status
+# JobPilot AI Project Status
 
 ## Current Sprint
 
@@ -8,25 +8,34 @@ Sprint 0
 
 Day 3
 
+## Current Phase
+
+Foundation & Planning
+
 ## Current Milestone
 
-Project Roadmap
+Define the application architecture
 
-## Completed
+## Completed Milestones
 
-- GitHub repository created
-- Documentation structure created
-- Project Charter completed
-- AWS JobPilot Mentor GPT created
-- Mentor documentation created
+- Define the project vision and objectives
+- Create the Project Charter
+- Create the initial Project Roadmap
+- Establish the GitHub repository structure
+- Create the engineering documentation structure
+- Create the AI Mentor documentation
 
-## In Progress
+## Current Task
 
-- Project Roadmap
+Create `docs/03_Architecture.md`
 
 ## Next Task
 
-Continue creating the Project Roadmap.
+Create the initial domain model and database design
+
+## Blockers
+
+None
 
 ## Last Updated
 
