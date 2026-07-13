@@ -1,10 +1,12 @@
+# JobPilot AI Project Status
+
 ## Current Sprint
 
 Sprint 0
 
 ## Current Day
 
-Day 3
+Day 4
 
 ## Current Phase
 
@@ -26,11 +28,11 @@ Create the initial domain model and database design
 
 ## Current Task
 
-Create the initial domain model and database design
+Create `docs/04_Domain_Model.md` and design the initial database schema.
 
 ## Next Task
 
-Design the Entity Framework Core entities and relationships
+Set up the local development environment and create the ASP.NET Core Web API solution.
 
 ## Blockers
 
