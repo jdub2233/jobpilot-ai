@@ -21,3 +21,38 @@ The roadmap supports two goals:
 **Sprint:** Sprint 0  
 **Phase:** Project foundation and planning  
 **Overall Status:** In Progress
+
+## Project Phases
+
+### Phase 1 – Foundation & Planning
+**Status:** In Progress
+
+Establish the project foundation, documentation, architecture, development environment, and Git repository.
+
+---
+
+### Phase 2 – Core Application Development
+**Status:** Planned
+
+Develop the initial JobPilot AI application with a React frontend, ASP.NET Core Web API backend, Entity Framework Core, and PostgreSQL database.
+
+---
+
+### Phase 3 – AWS Cloud Deployment
+**Status:** Planned
+
+Deploy the application to AWS using cloud infrastructure while applying AWS architectural best practices.
+
+---
+
+### Phase 4 – Cloud Enhancements
+**Status:** Planned
+
+Expand the application using additional AWS services for storage, monitoring, messaging, security, and scalability.
+
+---
+
+### Phase 5 – Portfolio Polish
+**Status:** Planned
+
+Improve documentation, testing, automation, cost optimization, and presentation to create a portfolio-quality project suitable for technical interviews.
