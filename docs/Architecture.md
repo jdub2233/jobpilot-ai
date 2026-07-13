@@ -136,3 +136,21 @@ Future portfolio-quality improvements may include:
 - Automated deployment through GitHub Actions
 
 These services will be introduced only when they solve a documented application, security, availability, or operational requirement.
+
+## Architecture Principles
+
+The architecture of JobPilot AI will follow these principles throughout the project:
+
+- **Separation of Concerns** — Keep the frontend, backend, data access, and database responsibilities independent.
+- **Security First** — Apply least privilege, protect sensitive data, and avoid exposing internal services directly.
+- **Maintainability** — Favor clear, well-documented, and modular code over unnecessary complexity.
+- **Scalability** — Design components so they can be expanded as application usage grows.
+- **Cost Awareness** — Prefer low-cost and AWS Free Tier services while learning.
+- **Observability** — Add logging, monitoring, and metrics as cloud services are introduced.
+- **Infrastructure as Code** — Manage cloud infrastructure through version-controlled definitions when the project reaches that stage.
+
+## Document Status
+
+**Status:** Completed
+
+This document describes the planned high-level architecture for JobPilot AI during Sprint 0. It will evolve as the application is implemented and new AWS services are introduced.
