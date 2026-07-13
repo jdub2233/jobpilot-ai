@@ -84,3 +84,29 @@ The initial database will run locally. Amazon RDS for PostgreSQL is planned for 
 | ORM | Entity Framework Core | Simplifies database access, supports code-first development, and integrates well with ASP.NET Core. |
 | Database | PostgreSQL | Open-source relational database with strong performance and compatibility with Amazon RDS. |
 | Cloud Platform | Amazon Web Services (AWS) | Supports the project's learning goals while providing scalable cloud infrastructure for future deployment. |
+
+## High-Level System Flow
+
+The initial application request flow will be:
+
+1. A user interacts with the React frontend.
+2. The frontend sends an HTTP request to the ASP.NET Core Web API.
+3. The API validates the request and applies business rules.
+4. The API uses Entity Framework Core to query or update PostgreSQL.
+5. PostgreSQL returns the requested data or confirms the update.
+6. The API returns an HTTP response to the frontend.
+7. The frontend updates the user interface.
+
+```text
+User
+  |
+  v
+React + TypeScript Frontend
+  |
+  | HTTPS / REST
+  v
+ASP.NET Core Web API
+  |
+  | Entity Framework Core
+  v
+PostgreSQL
