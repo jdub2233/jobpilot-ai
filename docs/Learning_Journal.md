@@ -47,3 +47,42 @@ Sprint 0 - Project Planning
 None
 
 This sprint focused on planning and project organization.
+
+
+# Learning Journal
+
+---
+
+# July 13, 2026 — Sprint 0 Day 3
+
+## Objectives
+
+- Complete the initial application architecture document
+
+## Completed
+
+- ✅ Created `docs/03_Architecture.md`
+- ✅ Documented the layered architecture
+- ✅ Defined technology choices and rationale
+- ✅ Documented the planned AWS deployment architecture
+- ✅ Established architecture principles
+
+## Lessons Learned
+
+- A layered architecture separates responsibilities between the frontend, backend, data access, and database.
+- Architecture should be documented before implementation.
+- Planned AWS services should be clearly distinguished from implemented services.
+- Markdown code blocks require closing backticks to avoid formatting issues.
+
+## AWS Concepts
+
+- EC2 (planned)
+- RDS (planned)
+- S3 (planned)
+- CloudWatch (planned)
+- IAM (planned)
+
+## Questions to Review
+
+- Why shouldn't the frontend access the database directly?
+- What responsibilities belong in the API?
