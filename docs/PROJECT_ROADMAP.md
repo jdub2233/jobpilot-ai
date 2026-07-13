@@ -50,12 +50,32 @@ Establish the project foundation, documentation, architecture, development envir
 
 Develop the initial JobPilot AI application with a React frontend, ASP.NET Core Web API backend, Entity Framework Core, and PostgreSQL database.
 
+### Goals
+
+- Build the React frontend
+- Develop the ASP.NET Core Web API
+- Implement Entity Framework Core
+- Configure PostgreSQL
+- Create core JobPilot AI features
+- Build REST APIs
+- Implement authentication and authorization
+- Prepare the application for cloud deployment
+
 ---
 
 ### Phase 3 – AWS Cloud Deployment
 **Status:** Planned
 
 Deploy the application to AWS using cloud infrastructure while applying AWS architectural best practices.
+
+### Goals
+
+- Provision AWS infrastructure
+- Deploy the ASP.NET Core API
+- Deploy the PostgreSQL database
+- Configure networking and security
+- Implement monitoring and logging
+- Validate a complete cloud deployment
 
 ---
 
@@ -64,9 +84,28 @@ Deploy the application to AWS using cloud infrastructure while applying AWS arch
 
 Expand the application using additional AWS services for storage, monitoring, messaging, security, and scalability.
 
+### Goals
+
+- Add scalable file storage
+- Introduce asynchronous processing
+- Improve application security
+- Implement Infrastructure as Code
+- Add CI/CD automation
+- Enhance observability
+- Optimize cost and performance
+
 ---
 
 ### Phase 5 – Portfolio Polish
 **Status:** Planned
 
 Improve documentation, testing, automation, cost optimization, and presentation to create a portfolio-quality project suitable for technical interviews.
+
+### Goals
+
+- Improve project documentation
+- Add architecture diagrams
+- Perform application testing
+- Refine deployment procedures
+- Produce portfolio screenshots and demos
+- Prepare interview-ready documentation
