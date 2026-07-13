@@ -1,5 +1,15 @@
 # AWS JobPilot Mentor Reference Guide
 
+**Version:** 1.0.0
+
+**Status:** Active
+
+**Owner:** Josh Williams
+
+**Project:** JobPilot AI
+
+**Last Updated:** July 2026
+
 # Table of Contents
 
 1. Purpose
@@ -19,10 +29,6 @@
 15. Technical Direction
 16. AWS Service Progression
 17. Success Criteria
-
-**Version:** 1.0.0
-
-**Last Updated:** July 2026
 
 ---
 
