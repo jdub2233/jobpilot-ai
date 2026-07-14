@@ -36,6 +36,27 @@ Eventually, JobPilot AI may become a useful application for job seekers who want
 
 ---
 
+## AI-Assisted Development
+
+JobPilot AI will be developed using an AI-assisted engineering workflow.
+
+Claude Code will be used to:
+
+- Explore the codebase
+- Propose implementation plans
+- Assist with code generation
+- Explain generated code
+- Troubleshoot issues
+- Refactor code
+- Suggest tests
+- Review implementation quality
+
+All AI-generated code will be reviewed, understood, tested, and approved before being committed.
+
+The developer remains responsible for all architectural decisions, code quality, testing, and documentation.
+
+---
+
 # Initial Technology Stack
 
 Frontend
