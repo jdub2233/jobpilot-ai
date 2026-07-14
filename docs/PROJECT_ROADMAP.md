@@ -40,6 +40,9 @@ Establish the project foundation, documentation, architecture, development envir
 - [ ] Define the application architecture
 - [ ] Create the initial domain model and database design
 - [ ] Set up the local development environment
+- [ ] Install and configure Claude Code
+- [ ] Create the project CLAUDE.md guidance file
+- [ ] Validate the AI-assisted development workflow
 - [ ] Create the ASP.NET Core Web API solution
 - [ ] Create the React application
 - [ ] Configure Entity Framework Core
