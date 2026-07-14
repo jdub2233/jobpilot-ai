@@ -111,6 +111,83 @@ ASP.NET Core Web API
   v
 PostgreSQL
 ```
+
+---
+
+## Development Workflow
+
+JobPilot AI follows an AI-assisted engineering workflow that combines architectural planning, AI-assisted implementation, and human engineering judgment.
+
+Each development task follows a structured process to ensure that implementation aligns with the project roadmap, architectural decisions, and AWS learning objectives.
+
+The development workflow is:
+
+```text
+Project Documentation
+(Project Status, Roadmap, Architecture)
+                │
+                ▼
+AWS JobPilot Mentor
+(Project Planning & Architecture)
+                │
+                ▼
+Claude Code
+(Code Exploration & Implementation)
+                │
+                ▼
+Developer Review
+(Code Review & Understanding)
+                │
+                ▼
+Build & Testing
+                │
+                ▼
+Documentation Updates
+                │
+                ▼
+GitHub Commit
+```
+
+### Workflow Responsibilities
+
+#### AWS JobPilot Mentor
+
+Provides engineering guidance by:
+
+- Reviewing project documentation
+- Planning sprint milestones
+- Teaching AWS concepts
+- Explaining architectural decisions
+- Generating hands-on learning tasks
+- Producing documentation updates
+- Preparing certification quizzes
+
+#### Claude Code
+
+Assists with software implementation by:
+
+- Exploring the repository
+- Proposing implementation plans
+- Generating and explaining code
+- Assisting with refactoring
+- Troubleshooting issues
+- Suggesting and updating tests
+- Reviewing implementation details
+
+#### Developer
+
+The developer remains responsible for:
+
+- Architectural decisions
+- Understanding all generated code
+- Reviewing every AI-generated change
+- Running builds and tests
+- Verifying functionality
+- Approving Git commits
+- Maintaining project documentation
+
+This workflow ensures that AI accelerates development while engineering judgment, testing, and documentation remain the responsibility of the developer.
+
 ## Planned AWS Deployment Architecture
 
 AWS deployment is planned for a later project phase. No AWS application infrastructure has been implemented yet.
@@ -153,4 +230,4 @@ The architecture of JobPilot AI will follow these principles throughout the proj
 
 **Status:** Completed
 
-This document describes the planned high-level architecture for JobPilot AI during Sprint 0. It will evolve as the application is implemented and new AWS services are introduced.
+This document describes the planned high-level architecture for JobPilot AI during Sprint 0. It will evolve as the application is implemented, AI-assisted development practices mature, and new AWS services are introduced.
