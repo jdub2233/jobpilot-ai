@@ -322,5 +322,62 @@ Initial supported values:
 - The initial model assumes annual salary values.
 - Hourly compensation and currency support are deferred.
 
+## Deletion Behavior
+
+### Employer
+
+An Employer cannot be deleted while related JobPositions exist.
+
+Recommended behavior:
+
+- Restrict deletion
+- Preserve employer and position history
+- Allow archival to be considered later
+
+### JobPosition
+
+A JobPosition cannot be deleted while related JobApplications exist.
+
+Recommended behavior:
+
+- Restrict deletion
+- Preserve application history
+- Correct or archive inaccurate positions instead of deleting them
+
+### JobApplication
+
+Deleting a JobApplication may also delete its dependent records:
+
+- ApplicationStatusHistory
+- FollowUpReminders
+
+Recommended behavior:
+
+- Cascade deletion for dependent status history and reminders
+- Require explicit confirmation at the application layer
+- Consider soft deletion before portfolio-quality deployment
+
+### ApplicationStatusHistory
+
+Status history records should normally not be deleted individually.
+
+Exceptions may include:
+
+- Correcting accidental duplicate records
+- Removing invalid test data during development
+
+### FollowUpReminder
+
+A FollowUpReminder may be deleted independently because it is an operational task rather than permanent application history.
+
+## Initial Delete Rules
+
+| Parent Entity | Dependent Entity | Delete Behavior |
+|---|---|---|
+| Employer | JobPosition | Restrict |
+| JobPosition | JobApplication | Restrict |
+| JobApplication | ApplicationStatusHistory | Cascade |
+| JobApplication | FollowUpReminder | Cascade |
+
 Relationship:
 JobApplication (1) -----> (*) FollowUpReminder
