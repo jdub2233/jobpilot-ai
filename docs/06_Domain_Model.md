@@ -252,5 +252,75 @@ Constraints:
 - `ReminderType` cannot be empty.
 - `CompletedAt` should be null when `IsCompleted` is false.
 
+## Status Values and Business Rules
+
+### Application Status
+
+Initial supported values:
+
+- Interested
+- Applied
+- Screening
+- Interviewing
+- Offer
+- Accepted
+- Rejected
+- Withdrawn
+- Closed
+
+Business rules:
+
+- A new application must have a current status.
+- Changing `JobApplication.CurrentStatus` should also create an `ApplicationStatusHistory` record.
+- Status history records should not be edited after creation except to correct documented data-entry mistakes.
+- `AppliedDate` may be null while the application status is `Interested`.
+- `AppliedDate` should be populated when the application reaches `Applied` or a later stage.
+
+### Employment Type
+
+Initial supported values:
+
+- FullTime
+- PartTime
+- Contract
+- Temporary
+- Internship
+- Other
+
+### Reminder Type
+
+Initial supported values:
+
+- FollowUp
+- Interview
+- RecruiterContact
+- ApplicationCheck
+- ThankYou
+- Other
+
+### Follow-Up Reminder Rules
+
+- A reminder must belong to a job application.
+- `DueAt` is required.
+- New reminders default to `IsCompleted = false`.
+- `CompletedAt` should be null while `IsCompleted` is false.
+- When a reminder is completed, `CompletedAt` should record the completion time.
+- Reopening a reminder should clear `CompletedAt`.
+
+### Timestamp Rules
+
+- Application timestamps will be stored in UTC.
+- `CreatedAt` is assigned when a record is created.
+- `UpdatedAt` is updated whenever a mutable record changes.
+- User-facing dates and times may later be converted to the user's local time.
+
+### Salary Rules
+
+- Salary values use decimal precision.
+- Salary values cannot be negative.
+- `SalaryMaximum` cannot be less than `SalaryMinimum`.
+- The initial model assumes annual salary values.
+- Hourly compensation and currency support are deferred.
+
 Relationship:
 JobApplication (1) -----> (*) FollowUpReminder
