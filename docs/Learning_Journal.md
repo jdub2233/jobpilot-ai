@@ -86,3 +86,41 @@ This sprint focused on planning and project organization.
 
 - Why shouldn't the frontend access the database directly?
 - What responsibilities belong in the API?
+
+# July 15, 2026 — Sprint 0 Day 5
+
+## Objectives
+
+- Design the initial domain model and database schema for JobPilot AI.
+
+## Completed
+
+- ✅ Created `docs/04_Domain_Model.md`
+- ✅ Defined the initial business entities
+- ✅ Documented entity relationships
+- ✅ Designed the initial PostgreSQL database schema
+- ✅ Defined application status values and business rules
+- ✅ Documented delete behaviors
+- ✅ Planned the initial indexing strategy
+- ✅ Added Entity Framework Core implementation guidance
+- ✅ Recorded deferred design decisions
+
+## Lessons Learned
+
+- A well-designed domain model provides a strong foundation for implementation with Entity Framework Core.
+- Business rules should be documented before they are enforced in code.
+- Database design is about modeling the business domain rather than simply creating tables.
+- Following Entity Framework Core conventions (using `Id` for primary keys and `<EntityName>Id` for foreign keys) simplifies implementation while keeping the model clear and maintainable.
+- Planning relationships, constraints, and delete behaviors before coding helps avoid costly redesign later.
+
+## AWS Concepts Applied
+
+- None directly during this milestone.
+- The database design will later support deployment to Amazon RDS for PostgreSQL during the AWS implementation phase.
+
+## Questions to Review
+
+- Why is `ApplicationStatusHistory` modeled as a separate entity instead of storing only the current status?
+- Why should foreign key columns generally be indexed?
+- When should a relationship use **Restrict** versus **Cascade** delete behavior?
+- Why does Entity Framework Core recommend using `Id` as the primary key naming convention?
