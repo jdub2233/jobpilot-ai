@@ -28,3 +28,81 @@ This is a learning implementation intended for the first local version of the ap
 - Analytics
 - Notifications
 - AWS infrastructure
+
+
+## Core Entities
+
+### Employer
+
+Represents a company or organization offering job opportunities.
+
+Suggested attributes:
+
+- Id
+- Name
+- WebsiteUrl
+- Industry
+- Notes
+- CreatedAt
+- UpdatedAt
+
+### JobPosition
+
+Represents a specific job opening at an employer.
+
+Suggested attributes:
+
+- Id
+- EmployerId
+- Title
+- Location
+- EmploymentType
+- JobPostingUrl
+- SalaryMinimum
+- SalaryMaximum
+- Description
+- DatePosted
+- CreatedAt
+- UpdatedAt
+
+### JobApplication
+
+Represents an application submitted for a specific job position.
+
+Suggested attributes:
+
+- Id
+- JobPositionId
+- CurrentStatus
+- AppliedDate
+- Source
+- Notes
+- CreatedAt
+- UpdatedAt
+
+### ApplicationStatusHistory
+
+Represents a recorded change in an application's status.
+
+Suggested attributes:
+
+- Id
+- JobApplicationId
+- Status
+- ChangedAt
+- Notes
+
+### FollowUpReminder
+
+Represents a reminder related to a job application.
+
+Suggested attributes:
+
+- Id
+- JobApplicationId
+- DueAt
+- ReminderType
+- Notes
+- IsCompleted
+- CompletedAt
+- CreatedAt
