@@ -106,3 +106,43 @@ Suggested attributes:
 - IsCompleted
 - CompletedAt
 - CreatedAt
+
+## Entity Relationships
+
+### Employer → JobPosition
+
+- One Employer can have many JobPositions.
+- Each JobPosition belongs to one Employer.
+
+Relationship:
+Employer (1) -----> (*) JobPosition
+
+---
+
+### JobPosition → JobApplication
+
+- One JobPosition can have many JobApplications.
+- Each JobApplication belongs to one JobPosition.
+
+Relationship:
+JobPosition (1) -----> (*) JobApplication
+
+---
+
+### JobApplication → ApplicationStatusHistory
+
+- One JobApplication can have many status history records.
+- Each status history record belongs to one JobApplication.
+
+Relationship:
+JobApplication (1) -----> (*) ApplicationStatusHistory
+
+---
+
+### JobApplication → FollowUpReminder
+
+- One JobApplication can have many FollowUpReminders.
+- Each reminder belongs to one JobApplication.
+
+Relationship:
+JobApplication (1) -----> (*) FollowUpReminder
