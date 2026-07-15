@@ -448,3 +448,26 @@ This supports queries such as:
 - Indexes should support real query patterns.
 - Too many indexes increase storage usage and slow inserts and updates.
 - Additional indexes should be added only after query behavior is understood.
+
+## Domain Relationship Diagram
+
+```text
+Employer
+  1
+  |
+  | has many
+  |
+  *
+JobPosition
+  1
+  |
+  | has many
+  |
+  *
+JobApplication
+  1
+  |-------------------------|
+  | has many                | has many
+  |                         |
+  *                         *
+ApplicationStatusHistory    FollowUpReminder
