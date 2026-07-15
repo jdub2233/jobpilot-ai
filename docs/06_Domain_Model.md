@@ -381,3 +381,70 @@ A FollowUpReminder may be deleted independently because it is an operational tas
 
 Relationship:
 JobApplication (1) -----> (*) FollowUpReminder
+
+## Indexes and Uniqueness
+
+### Employers
+
+Recommended indexes:
+
+- Index on `Name`
+
+Initial uniqueness decision:
+
+- Employer names are not required to be unique.
+- Different companies may share similar names.
+- Duplicate prevention will initially be handled through application validation and user review.
+
+### JobPositions
+
+Recommended indexes:
+
+- Index on `EmployerId`
+- Index on `Title`
+- Composite index on `EmployerId` and `Title`
+
+Initial uniqueness decision:
+
+- Job position titles are not unique.
+- The same employer may post the same title multiple times.
+- Job posting URL uniqueness is deferred because URLs may change or be reused.
+
+### JobApplications
+
+Recommended indexes:
+
+- Index on `JobPositionId`
+- Index on `CurrentStatus`
+- Index on `AppliedDate`
+- Composite index on `CurrentStatus` and `AppliedDate`
+
+### ApplicationStatusHistory
+
+Recommended indexes:
+
+- Index on `JobApplicationId`
+- Composite index on `JobApplicationId` and `ChangedAt`
+
+This supports retrieving an application's status timeline in chronological order.
+
+### FollowUpReminders
+
+Recommended indexes:
+
+- Index on `JobApplicationId`
+- Index on `DueAt`
+- Composite index on `IsCompleted` and `DueAt`
+
+This supports queries such as:
+
+- Find all incomplete reminders
+- Find reminders due soon
+- Find reminders for a specific application
+
+## Indexing Principles
+
+- Foreign key columns should usually be indexed.
+- Indexes should support real query patterns.
+- Too many indexes increase storage usage and slow inserts and updates.
+- Additional indexes should be added only after query behavior is understood.
