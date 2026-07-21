@@ -14,7 +14,7 @@ Foundation & Planning
 
 ## Current Milestone
 
-Set up the local development environment and create the ASP.NET Core Web API solution
+Complete the local development environment.
 
 ## Completed Milestones
 
@@ -26,14 +26,22 @@ Set up the local development environment and create the ASP.NET Core Web API sol
 - Create the AI Mentor documentation
 - Define the application architecture
 - Create the initial domain model and database design
+- Set up the local development environment
+- Create the ASP.NET Core Web API solution
 
 ## Current Task
 
-Set up the local development environment and create the ASP.NET Core Web API solution.
+Configure the backend data layer by:
+
+- Installing Entity Framework Core packages
+- Installing and configuring PostgreSQL
+- Creating the `JobPilotDbContext`
+- Configuring the database connection
+- Creating the initial Entity Framework Core migration
 
 ## Next Task
 
-Configure Entity Framework Core and PostgreSQL for local development.
+Verify the API can successfully connect to PostgreSQL and complete the local development environment foundation.
 
 ## Blockers
 
@@ -41,4 +49,4 @@ None
 
 ## Last Updated
 
-2026-07-13
+2026-07-20
