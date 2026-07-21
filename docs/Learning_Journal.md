@@ -124,3 +124,45 @@ This sprint focused on planning and project organization.
 - Why should foreign key columns generally be indexed?
 - When should a relationship use **Restrict** versus **Cascade** delete behavior?
 - Why does Entity Framework Core recommend using `Id` as the primary key naming convention?
+
+# July 20, 2026 — Sprint 0 Day 5 (Continued)
+
+## Objectives
+
+- Create the initial ASP.NET Core Web API solution for JobPilot AI.
+- Verify the local development environment.
+- Prepare the solution for Entity Framework Core implementation.
+
+## Completed
+
+- ✅ Created the `JobPilotAI.slnx` solution.
+- ✅ Created the `JobPilotAI.Api` ASP.NET Core Web API project.
+- ✅ Organized the solution using the `src/` folder structure.
+- ✅ Added the API project to the solution.
+- ✅ Verified successful builds with .NET 10.
+- ✅ Investigated and resolved a transitive NuGet package vulnerability by upgrading `Microsoft.OpenApi` to version `2.7.5`.
+- ✅ Configured and trusted the ASP.NET Core HTTPS development certificate.
+- ✅ Verified the API over both HTTP and HTTPS.
+- ✅ Removed the default WeatherForecast sample code and related template files.
+- ✅ Created focused Git commits documenting the solution setup and template cleanup.
+
+## Lessons Learned
+
+- An ASP.NET Core solution (`.slnx`) provides a logical container for one or more projects.
+- Transitive NuGet dependencies should be reviewed for security advisories before committing new projects.
+- The `dotnet nuget why` command is useful for tracing dependency chains and identifying the source of transitive packages.
+- Local HTTPS development requires a trusted ASP.NET Core development certificate.
+- Small, single-purpose Git commits create a cleaner and more maintainable project history.
+
+## AWS Concepts Applied
+
+- None directly during this milestone.
+- The ASP.NET Core Web API created during this session will later be deployed to Amazon EC2 and integrated with services such as Amazon RDS, CloudWatch, and Application Load Balancer.
+
+## Questions to Review
+
+- What is the difference between a .NET solution and a project?
+- What is a transitive NuGet dependency?
+- Why should security advisories be reviewed before accepting template-generated dependencies?
+- Why does ASP.NET Core use a development HTTPS certificate?
+- Why are small, focused Git commits considered a best practice?
