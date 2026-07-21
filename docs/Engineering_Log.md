@@ -89,3 +89,52 @@ This includes:
 - Create the ASP.NET Core Web API project
 - Verify the solution builds successfully
 - Prepare for Entity Framework Core and PostgreSQL configuration
+
+# July 20, 2026 — Sprint 0 Day 5
+
+## Milestone
+
+- Create the initial ASP.NET Core Web API solution.
+
+## Completed
+
+- ✅ Created the `JobPilotAI.slnx` solution.
+- ✅ Created the `JobPilotAI.Api` ASP.NET Core Web API project.
+- ✅ Organized the solution using the `src/` folder structure.
+- ✅ Added the API project to the solution.
+- ✅ Verified successful builds with .NET 10.
+- ✅ Investigated a transitive NuGet dependency vulnerability.
+- ✅ Added an explicit reference to `Microsoft.OpenApi` version `2.7.5`.
+- ✅ Verified no vulnerable NuGet packages remained.
+- ✅ Configured and trusted the ASP.NET Core HTTPS development certificate.
+- ✅ Verified the API over both HTTP and HTTPS.
+- ✅ Removed the default ASP.NET Core template files (`WeatherForecastController`, `WeatherForecast`, and `.http` file).
+- ✅ Simplified `Program.cs` to establish a clean application foundation.
+- ✅ Created focused Git commits for the initial solution setup and template cleanup.
+
+## Verification
+
+- ✅ Solution builds successfully.
+- ✅ Application starts without errors.
+- ✅ HTTPS endpoint responds successfully.
+- ✅ No remaining vulnerable NuGet packages detected.
+- ✅ Repository contains a clean ASP.NET Core API ready for Entity Framework Core implementation.
+
+## Repository Changes
+
+**Commit 1**
+```text
+Create initial ASP.NET Core Web API solution
+```
+
+**Commit 2**
+```text
+Remove ASP.NET Core template sample code
+```
+
+## Next Task
+
+- Configure Entity Framework Core.
+- Install and configure PostgreSQL for local development.
+- Create the initial `JobPilotDbContext`.
+- Generate the first Entity Framework Core migration.
