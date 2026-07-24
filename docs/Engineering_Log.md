@@ -138,3 +138,58 @@ Remove ASP.NET Core template sample code
 - Install and configure PostgreSQL for local development.
 - Create the initial `JobPilotDbContext`.
 - Generate the first Entity Framework Core migration.
+
+# July 24, 2026
+
+## Sprint
+
+Sprint 0 – Day 6
+
+## Milestone
+
+Configure Entity Framework Core and PostgreSQL data layer.
+
+## Work Completed
+
+- Installed Entity Framework Core packages.
+- Installed the Npgsql PostgreSQL provider.
+- Installed the Entity Framework Core CLI (`dotnet-ef`).
+- Installed PostgreSQL 18 for local development.
+- Configured the PostgreSQL command-line tools (`psql`).
+- Created the `Data` folder.
+- Implemented `JobPilotDbContext`.
+- Registered Entity Framework Core with ASP.NET Core Dependency Injection.
+- Configured PostgreSQL as the application's database provider.
+- Configured a secure local database connection using ASP.NET Core User Secrets.
+- Generated the initial Entity Framework Core migration.
+- Created the `JobPilotAI` PostgreSQL database.
+- Applied the initial migration successfully.
+- Verified the database and migration history directly using PostgreSQL (`psql`).
+
+## Architectural Decisions
+
+- Use Entity Framework Core as the application's ORM.
+- Use PostgreSQL for local development to align with the planned deployment to Amazon RDS for PostgreSQL.
+- Store local development connection strings using ASP.NET Core User Secrets instead of source-controlled configuration files.
+- Configure `JobPilotDbContext` using ASP.NET Core Dependency Injection to support maintainability and future cloud deployment.
+
+## Verification
+
+- ✅ Solution builds successfully.
+- ✅ Entity Framework Core migration created successfully.
+- ✅ PostgreSQL database created successfully.
+- ✅ `__EFMigrationsHistory` table created.
+- ✅ Initial migration recorded successfully.
+- ✅ Direct PostgreSQL verification completed using `psql`.
+
+## Repository Changes
+
+**Commit**
+
+```text
+Configure Entity Framework Core and PostgreSQL data layer
+```
+
+## Next Task
+
+Implement the first domain entity (`Employer`), add it to `JobPilotDbContext`, generate a new migration, and verify the `Employers` table is created.
