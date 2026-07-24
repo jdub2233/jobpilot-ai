@@ -1,12 +1,10 @@
-# JobPilot AI Project Status
-
 ## Current Sprint
 
 Sprint 0
 
 ## Current Day
 
-Day 5
+Day 6
 
 ## Current Phase
 
@@ -14,7 +12,7 @@ Foundation & Planning
 
 ## Current Milestone
 
-Complete the local development environment.
+Implement the initial application domain model.
 
 ## Completed Milestones
 
@@ -28,20 +26,20 @@ Complete the local development environment.
 - Create the initial domain model and database design
 - Set up the local development environment
 - Create the ASP.NET Core Web API solution
+- Configure Entity Framework Core
+- Install and configure PostgreSQL
+- Create the JobPilotDbContext
+- Configure the PostgreSQL connection
+- Create the initial Entity Framework Core migration
+- Verify API connectivity to PostgreSQL
 
 ## Current Task
 
-Configure the backend data layer by:
-
-- Installing Entity Framework Core packages
-- Installing and configuring PostgreSQL
-- Creating the `JobPilotDbContext`
-- Configuring the database connection
-- Creating the initial Entity Framework Core migration
+Implement the first domain entity (`Employer`) using Entity Framework Core.
 
 ## Next Task
 
-Verify the API can successfully connect to PostgreSQL and complete the local development environment foundation.
+Create the `Employer` entity, add it to `JobPilotDbContext`, generate a migration, and verify the `Employers` table is created.
 
 ## Blockers
 
@@ -49,4 +47,4 @@ None
 
 ## Last Updated
 
-2026-07-20
+2026-07-24
