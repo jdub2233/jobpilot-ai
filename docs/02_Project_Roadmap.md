@@ -45,11 +45,11 @@ Establish the project foundation, documentation, architecture, development envir
 - [ ] Validate the AI-assisted development workflow
 - [x] Create the ASP.NET Core Web API solution
 - [ ] Create the React application
-- [ ] Configure Entity Framework Core
-- [ ] Configure PostgreSQL for local development
-- [ ] Connect the API to PostgreSQL
-- [ ] Create the initial database migration
-- [ ] Verify the complete local development environment
+- [x] Configure Entity Framework Core
+- [x] Configure PostgreSQL for local development
+- [x] Connect the API to PostgreSQL
+- [x] Create the initial database migration
+- [x] Verify the complete local development environment
 - [ ] Document Sprint 0 deliverables
 
 ---
