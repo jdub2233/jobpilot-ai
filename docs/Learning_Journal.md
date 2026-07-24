@@ -166,3 +166,54 @@ This sprint focused on planning and project organization.
 - Why should security advisories be reviewed before accepting template-generated dependencies?
 - Why does ASP.NET Core use a development HTTPS certificate?
 - Why are small, focused Git commits considered a best practice?
+
+# July 24, 2026 — Sprint 0 Day 6
+
+## Objectives
+
+- Configure Entity Framework Core.
+- Configure PostgreSQL for local development.
+- Connect the ASP.NET Core Web API to PostgreSQL.
+- Create and apply the initial Entity Framework Core migration.
+- Verify end-to-end database connectivity.
+
+## Completed
+
+- ✅ Installed Entity Framework Core packages.
+- ✅ Installed the PostgreSQL Entity Framework Core provider.
+- ✅ Installed the Entity Framework Core CLI tools (`dotnet-ef`).
+- ✅ Installed PostgreSQL 18 for local development.
+- ✅ Configured the PostgreSQL command-line tools (`psql`).
+- ✅ Created the `Data` folder.
+- ✅ Created `JobPilotDbContext`.
+- ✅ Registered `JobPilotDbContext` with ASP.NET Core Dependency Injection.
+- ✅ Configured PostgreSQL as the Entity Framework Core provider.
+- ✅ Configured a secure local database connection using ASP.NET Core User Secrets.
+- ✅ Generated the initial Entity Framework Core migration.
+- ✅ Created the `JobPilotAI` PostgreSQL database.
+- ✅ Applied the initial migration successfully.
+- ✅ Verified the migration directly using PostgreSQL (`psql`).
+
+## Lessons Learned
+
+- `DbContext` is the primary gateway between an ASP.NET Core application and its database.
+- ASP.NET Core Dependency Injection manages the lifetime and configuration of `DbContext`.
+- Entity Framework Core uses providers (such as Npgsql) to communicate with specific database engines.
+- ASP.NET Core User Secrets provide a secure way to store development credentials without committing them to source control.
+- Entity Framework Core migrations provide version control for the database schema.
+- The `__EFMigrationsHistory` table records which migrations have been applied.
+- Connection issues are easier to troubleshoot by testing directly with `psql` before debugging application code.
+
+## AWS Concepts Applied
+
+- Local PostgreSQL mirrors the future use of Amazon RDS for PostgreSQL.
+- ASP.NET Core User Secrets provide a development equivalent to AWS Secrets Manager.
+- Entity Framework Core configuration remains consistent when transitioning from a local PostgreSQL instance to Amazon RDS.
+
+## Questions to Review
+
+- Why is `DbContext` registered using Dependency Injection?
+- Why should connection strings never be committed to Git?
+- What is the purpose of the `__EFMigrationsHistory` table?
+- What is the difference between `dotnet ef migrations add` and `dotnet ef database update`?
+- Why are ASP.NET Core User Secrets preferred over storing passwords in `appsettings.json`?
