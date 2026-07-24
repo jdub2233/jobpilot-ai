@@ -1,3 +1,7 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 # JobPilot AI — Claude Code Instructions
 
 ## Project Purpose
@@ -26,14 +30,42 @@ The project prioritizes learning, maintainability, security, and clear documenta
 - GitHub Actions later
 - Infrastructure as Code later
 
+## Current Codebase State
+
+As of Sprint 0, only the backend skeleton exists. Concretely, as of the last review:
+
+- `src/JobPilotAI.Api` is a bare ASP.NET Core Web API (`net10.0`) with the template sample code (e.g. `WeatherForecast`) already removed.
+- `Program.cs` is minimal: `AddControllers()`, `UseHttpsRedirection()`, `MapControllers()`. No controllers exist yet.
+- No Entity Framework Core packages, `DbContext`, or PostgreSQL connection are configured yet.
+- No React/TypeScript frontend project exists yet.
+- No test project exists yet.
+- `.github/workflows/` exists but is empty — no CI is configured yet.
+- The only `.sln`-equivalent is `JobPilotAI.slnx` at the repo root, referencing the single API project.
+
+Do not assume EF Core, PostgreSQL, authentication, the frontend, or CI exist just because they're described in the architecture docs or roadmap — check `docs/00_Project_Status.md` for what's actually done before proposing work that depends on it.
+
+## Build, Run, and Test Commands
+
+Run from the repository root unless noted otherwise.
+
+- Restore dependencies: `dotnet restore`
+- Build: `dotnet build JobPilotAI.slnx`
+- Run the API: `dotnet run --project src/JobPilotAI.Api`
+  - HTTP: `http://localhost:5225`
+  - HTTPS: `https://localhost:7163` (see `src/JobPilotAI.Api/Properties/launchSettings.json`)
+- Tests: no test project exists yet. When one is added, prefer `dotnet test` scoped to that project.
+
+There is no frontend project yet, so there are no `npm`/frontend build commands to document until Phase 2 begins.
+
 ## Project Source of Truth
 
 Before proposing or implementing work, review these files when they exist:
 
-- `docs/00_Project_Status.md`
-- `docs/01_Project_Charter.md`
-- `docs/02_Project_Roadmap.md`
-- `docs/03_Architecture.md`
+- `docs/00_Project_Status.md` — current sprint, day, milestone, and blockers
+- `docs/01_Project_Charter.md` — project vision and objectives
+- `docs/02_Project_Roadmap.md` — phase-by-phase plan and milestone checklist
+- `docs/03_Architecture.md` — layered architecture, tech decisions, planned AWS deployment
+- `docs/06_Domain_Model.md` — entities, relationships, schema, and business rules for the job-search domain
 
 Treat the latest project documentation as authoritative.
 
