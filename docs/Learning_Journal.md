@@ -217,3 +217,59 @@ This sprint focused on planning and project organization.
 - What is the purpose of the `__EFMigrationsHistory` table?
 - What is the difference between `dotnet ef migrations add` and `dotnet ef database update`?
 - Why are ASP.NET Core User Secrets preferred over storing passwords in `appsettings.json`?
+
+# Learning Journal
+
+---
+
+## 2026-07-27 — Sprint 0 Day 7
+
+### Session Goal
+
+Complete the Entity Framework Core domain model for JobPilot AI and generate the initial PostgreSQL database schema.
+
+### Accomplishments
+
+- Completed implementation of all five core domain entities.
+- Learned how Entity Framework Core models one-to-many relationships.
+- Configured Fluent API relationships using `HasOne()`, `WithMany()`, and `HasForeignKey()`.
+- Configured documented delete behaviors using `DeleteBehavior.Restrict` and `DeleteBehavior.Cascade`.
+- Applied documented string length constraints using `HasMaxLength()`.
+- Configured decimal precision using `HasPrecision(12,2)`.
+- Generated the first complete migration for the application.
+- Applied the migration successfully to PostgreSQL.
+- Verified the generated database schema using `psql`.
+- Performed a complete audit against the documented domain model.
+
+### Key Concepts Learned
+
+- Entity Framework Core conventions
+- Fluent API relationship configuration
+- Navigation properties
+- Foreign keys
+- Cascade vs Restrict delete behaviors
+- Column length configuration
+- Decimal precision configuration
+- EF Core migrations
+- Model snapshots
+- PostgreSQL schema verification
+
+### AWS Connection
+
+The database model is designed for PostgreSQL locally and aligns directly with the future deployment to Amazon RDS for PostgreSQL. The Entity Framework Core configuration will transfer without modification when the application moves to AWS.
+
+### Reflections
+
+Today was one of the largest foundational milestones completed so far. I used Claude Code as an engineering assistant rather than accepting generated code blindly, reviewing each proposed entity, relationship, and Fluent API configuration before applying changes. Auditing the implementation against the domain model and verifying the resulting PostgreSQL schema with `psql` reinforced the importance of validating generated code against documentation and the actual database.
+
+### Questions to Review
+
+- Why use Fluent API instead of data annotations?
+- When should `DeleteBehavior.Cascade` be used versus `DeleteBehavior.Restrict`?
+- Why should decimal precision be configured explicitly?
+- Why does EF Core automatically create indexes for foreign keys?
+- What information is stored in the EF Core model snapshot?
+
+### Next Learning Goal
+
+Begin building the first complete API vertical slice by implementing the Employer CRUD endpoints using ASP.NET Core, Entity Framework Core, and Swagger.
