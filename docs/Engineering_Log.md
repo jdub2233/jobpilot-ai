@@ -193,3 +193,90 @@ Configure Entity Framework Core and PostgreSQL data layer
 ## Next Task
 
 Implement the first domain entity (`Employer`), add it to `JobPilotDbContext`, generate a new migration, and verify the `Employers` table is created.
+
+# Engineering Log
+
+---
+
+## 2026-07-27 — Sprint 0 Day 7
+
+### Milestone
+Completed the initial Entity Framework Core domain model implementation.
+
+### Objectives
+- Complete all remaining domain entities.
+- Configure entity relationships using Fluent API.
+- Align the EF Core model with the documented domain model.
+- Generate and apply the initial database migration.
+- Verify the generated PostgreSQL schema.
+
+### Work Completed
+
+- Implemented the remaining domain entities:
+  - JobPosition
+  - JobApplication
+  - ApplicationStatusHistory
+  - FollowUpReminder
+
+- Added navigation properties for all documented one-to-many relationships.
+
+- Configured Fluent API relationships in `JobPilotDbContext`:
+  - Employer → JobPosition (Restrict)
+  - JobPosition → JobApplication (Restrict)
+  - JobApplication → ApplicationStatusHistory (Cascade)
+  - JobApplication → FollowUpReminder (Cascade)
+
+- Added Fluent API configuration for:
+  - Documented string length constraints using `HasMaxLength()`
+  - Salary precision using `HasPrecision(12,2)`
+
+- Performed a complete audit comparing the implemented EF Core model against `docs/06_Domain_Model.md`.
+
+- Generated the consolidated Entity Framework Core migration:
+  - `20260727213453_AddRemainingDomainEntities`
+
+- Applied the migration successfully to the local PostgreSQL database.
+
+- Verified the generated schema directly with `psql`, confirming:
+  - Tables
+  - Column types
+  - Nullability
+  - String lengths
+  - Decimal precision
+  - Foreign keys
+  - Delete behaviors
+  - Automatically generated foreign key indexes
+
+### Architecture Decisions
+
+- Used Fluent API exclusively for persistence configuration rather than data annotations.
+- Deferred secondary indexes until application query patterns are known.
+- Deferred business validation and timestamp automation to the application layer.
+- Implemented delete behaviors exactly as documented in the domain model.
+
+### Verification
+
+- ✅ Solution builds successfully.
+- ✅ Migration generated successfully.
+- ✅ Migration applied successfully.
+- ✅ PostgreSQL schema verified manually.
+- ✅ All relationships verified.
+- ✅ Restrict/Cascade behaviors verified.
+- ✅ Database schema matches the documented domain model.
+
+### Lessons Learned
+
+- EF Core migrations represent the complete model delta from the previous snapshot.
+- Foreign key indexes are generated automatically by EF Core.
+- Verifying the generated database directly with `psql` provides confidence that the code matches the intended design.
+- Reviewing AI-generated code before accepting changes improves understanding and catches documentation inconsistencies.
+
+### Next Task
+
+Begin implementation of the Employer vertical slice:
+
+- Employer DTOs
+- Repository
+- CRUD API
+- Swagger testing
+
