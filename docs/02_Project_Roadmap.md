@@ -44,12 +44,14 @@ Establish the project foundation, documentation, architecture, development envir
 - [x] Create the project CLAUDE.md guidance file
 - [ ] Validate the AI-assisted development workflow
 - [x] Create the ASP.NET Core Web API solution
-- [ ] Create the React application
 - [x] Configure Entity Framework Core
 - [x] Configure PostgreSQL for local development
 - [x] Connect the API to PostgreSQL
 - [x] Create the initial database migration
 - [x] Verify the complete local development environment
+- [ ] Implement core Entity Framework domain entities
+- [ ] Create database schema from domain model
+- [ ] Verify database schema using PostgreSQL
 - [ ] Document Sprint 0 deliverables
 
 ---
@@ -61,14 +63,15 @@ Develop the initial JobPilot AI application with a React frontend, ASP.NET Core 
 
 ### Goals
 
-- Build the React frontend
-- Develop the ASP.NET Core Web API
-- Implement Entity Framework Core
-- Configure PostgreSQL
-- Create core JobPilot AI features
-- Build REST APIs
-- Implement authentication and authorization
-- Prepare the application for cloud deployment
+
+- [ ] Develop ASP.NET Core REST API
+- [ ] Implement CRUD endpoints
+- [ ] Implement business logic
+- [ ] Build the React frontend
+- [ ] Connect React to the API
+- [ ] Authentication
+- [ ] Application features
+- [ ] Prepare for AWS deployment
 
 ---
 
