@@ -49,10 +49,10 @@ Establish the project foundation, documentation, architecture, development envir
 - [x] Connect the API to PostgreSQL
 - [x] Create the initial database migration
 - [x] Verify the complete local development environment
-- [ ] Implement core Entity Framework domain entities
-- [ ] Create database schema from domain model
-- [ ] Verify database schema using PostgreSQL
-- [ ] Document Sprint 0 deliverables
+- [x] Implement core Entity Framework domain entities
+- [x] Create database schema from domain model
+- [x] Verify database schema using PostgreSQL
+- [x] Document Sprint 0 deliverables
 
 ---
 
