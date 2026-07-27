@@ -4,7 +4,7 @@ Sprint 0
 
 ## Current Day
 
-Day 6
+Day 7
 
 ## Current Phase
 
@@ -12,34 +12,24 @@ Foundation & Planning
 
 ## Current Milestone
 
-Implement the initial application domain model.
+Complete the initial Entity Framework Core domain model implementation.
 
 ## Completed Milestones
 
-- Define the project vision and objectives
-- Create the Project Charter
-- Create the initial Project Roadmap
-- Establish the GitHub repository structure
-- Create the engineering documentation structure
-- Create the AI Mentor documentation
-- Define the application architecture
-- Create the initial domain model and database design
-- Set up the local development environment
-- Create the ASP.NET Core Web API solution
-- Configure Entity Framework Core
-- Install and configure PostgreSQL
-- Create the JobPilotDbContext
-- Configure the PostgreSQL connection
-- Create the initial Entity Framework Core migration
-- Verify API connectivity to PostgreSQL
+- Implement all five core Entity Framework Core domain entities
+- Configure entity relationships using Fluent API
+- Configure delete behaviors
+- Configure database column lengths and decimal precision
+- Generate and apply the complete Entity Framework Core migration
+- Verify the PostgreSQL schema directly using psql
 
 ## Current Task
 
-Implement the first domain entity (`Employer`) using Entity Framework Core.
+Sprint 0 documentation closeout and prepare for API development.
 
 ## Next Task
 
-Create the `Employer` entity, add it to `JobPilotDbContext`, generate a migration, and verify the `Employers` table is created.
+Begin implementing the first vertical slice by creating the Employer API (DTOs, repository, controller, CRUD endpoints, and Swagger testing).
 
 ## Blockers
 
@@ -47,4 +37,4 @@ None
 
 ## Last Updated
 
-2026-07-24
+2026-07-27
