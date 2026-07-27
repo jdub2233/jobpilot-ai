@@ -49,7 +49,7 @@ Create the initial domain model and database design.
 
 ## Work Completed
 
-- Created `docs/04_Domain_Model.md`
+- Created `docs/06_Domain_Model.md`
 - Documented the project scope and deferred features
 - Defined five core business entities:
   - Employer
