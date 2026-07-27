@@ -18,14 +18,14 @@ The roadmap supports two goals:
 
 ## Current Project Status
 
-**Sprint:** Sprint 0  
-**Phase:** Project foundation and planning  
+**Sprint:** Sprint 1  
+**Phase:** Core Application Development  
 **Overall Status:** In Progress
 
 ## Project Phases
 
 ### Phase 1 – Foundation & Planning
-**Status:** In Progress
+**Status:** Completed
 
 Establish the project foundation, documentation, architecture, development environment, and Git repository.
 
@@ -42,7 +42,7 @@ Establish the project foundation, documentation, architecture, development envir
 - [x] Set up the local development environment
 - [x] Install and configure Claude Code
 - [x] Create the project CLAUDE.md guidance file
-- [ ] Validate the AI-assisted development workflow
+- [x] Validate the AI-assisted development workflow
 - [x] Create the ASP.NET Core Web API solution
 - [x] Configure Entity Framework Core
 - [x] Configure PostgreSQL for local development
@@ -57,7 +57,7 @@ Establish the project foundation, documentation, architecture, development envir
 ---
 
 ### Phase 2 – Core Application Development
-**Status:** Planned
+**Status:** In-Progress
 
 Develop the initial JobPilot AI application with a React frontend, ASP.NET Core Web API backend, Entity Framework Core, and PostgreSQL database.
 
