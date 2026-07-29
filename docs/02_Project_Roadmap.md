@@ -159,7 +159,3 @@ Complete the Employer API vertical slice:
 | Phase 5 - Portfolio Polish | ⚪ Planned |
 
 ---
-
-## Next Milestone
-
-Define the initial application architecture and document the high-level system design.
