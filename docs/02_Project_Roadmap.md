@@ -126,25 +126,36 @@ Improve documentation, testing, automation, cost optimization, and presentation 
 
 **Current Sprint:** Sprint 1
 
-**Current Day:** Day 8
+**Current Day:** Day 9
 
 Current Milestone:
 Employer API Vertical Slice
 
 Current Objective:
-Implement the first complete REST API vertical slice for the Employer entity, including DTOs, repository, controller, CRUD endpoints, and Swagger testing.
+Complete the remaining CRUD operations for the Employer API and prepare the first production-inspired API implementation.
 
-## Next Milestone
+Completed:
+
+- Employer DTOs
+- Repository interface
+- Repository implementation
+- Dependency Injection registration
+- Employer controller
+- Swagger/OpenAPI configuration
+- POST endpoint
+- End-to-end verification with PostgreSQL
+
+Next Milestone
 
 Complete the Employer API vertical slice:
 
-- Employer DTOs
-- Repository
-- Dependency Injection
-- CRUD endpoints
+- GET collection endpoint
+- GET by Id endpoint
+- PUT endpoint
+- DELETE endpoint
 - Swagger verification
+- API review
 - Engineering documentation
-
 ---
 
 ## Phase Progress
