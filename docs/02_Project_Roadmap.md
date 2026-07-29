@@ -124,12 +124,26 @@ Improve documentation, testing, automation, cost optimization, and presentation 
 
 ## Current Focus
 
-**Current Sprint:** Sprint 0
+**Current Sprint:** Sprint 1
 
-**Current Day:** Day 2
+**Current Day:** Day 8
 
-**Current Objective:**
-Create the foundational project documentation and establish the overall project plan before beginning application development.
+Current Milestone:
+Employer API Vertical Slice
+
+Current Objective:
+Implement the first complete REST API vertical slice for the Employer entity, including DTOs, repository, controller, CRUD endpoints, and Swagger testing.
+
+## Next Milestone
+
+Complete the Employer API vertical slice:
+
+- Employer DTOs
+- Repository
+- Dependency Injection
+- CRUD endpoints
+- Swagger verification
+- Engineering documentation
 
 ---
 
