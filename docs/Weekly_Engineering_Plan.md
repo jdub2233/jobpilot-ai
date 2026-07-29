@@ -23,7 +23,7 @@
 
 ## JobPilot AI
 - Complete Sprint 0 documentation closeout
-- Prepare for the Employer API vertical slice
+- Begin implementation of the Employer API vertical slice.
 - Keep project documentation up to date
 
 ---
@@ -200,7 +200,7 @@ Review:
 
 Prepare goals for next week:
 
-- Begin Employer API vertical slice
+- Continue Employer API implementation and complete CRUD endpoints.
 - Continue AWS course (Security Groups, EBS, or next section)
 - Keep documentation aligned with implementation
 
