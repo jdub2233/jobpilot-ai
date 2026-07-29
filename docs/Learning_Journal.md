@@ -273,3 +273,62 @@ Today was one of the largest foundational milestones completed so far. I used Cl
 ### Next Learning Goal
 
 Begin building the first complete API vertical slice by implementing the Employer CRUD endpoints using ASP.NET Core, Entity Framework Core, and Swagger.
+
+# Learning Journal
+
+---
+
+## 2026-07-28 — Sprint 1 Day 9
+
+### Session Goal
+
+Begin the Employer API vertical slice by implementing the first end-to-end create workflow using ASP.NET Core, Entity Framework Core, PostgreSQL, DTOs, a repository layer, Dependency Injection, and Swagger.
+
+### Accomplishments
+
+- Created the initial Employer DTOs.
+- Created the Employer repository interface.
+- Implemented the Employer repository using Entity Framework Core.
+- Registered the Employer repository with ASP.NET Core Dependency Injection.
+- Created the Employer API controller.
+- Configured Swagger/OpenAPI for API discovery and testing.
+- Implemented `POST /api/Employers`.
+- Tested the Employer creation endpoint through Swagger.
+- Verified that the new Employer record was persisted successfully in PostgreSQL.
+- Confirmed the first complete request flow through the controller, repository, `JobPilotDbContext`, Entity Framework Core, and PostgreSQL.
+
+### Key Concepts Learned
+
+- DTOs as API request and response contracts
+- Separation between API models and database entities
+- Repository interfaces and implementations
+- Dependency Injection registration
+- Constructor injection in ASP.NET Core controllers
+- Controller responsibilities
+- Swagger/OpenAPI endpoint testing
+- Asynchronous database operations
+- Entity Framework Core persistence
+- End-to-end API verification
+
+### AWS Connection
+
+The Employer API is currently running against local PostgreSQL, but the same application structure is intended to support a future deployment using Amazon RDS for PostgreSQL. The repository and Dependency Injection design help keep the API loosely coupled to its data-access implementation, which should make the transition to AWS easier.
+
+Swagger is currently being used for local API testing. After deployment, services such as Amazon CloudWatch can be introduced to monitor API requests, application errors, and database connectivity. Amazon RDS and CloudWatch remain planned and were not implemented during this session.
+
+### Reflections
+
+Today marked the first working backend vertical slice in JobPilot AI. The most important achievement was not only creating the POST endpoint, but proving that the complete request flow worked from Swagger through the API controller and repository to PostgreSQL.
+
+Using DTOs prevented the API from exposing the Entity Framework Core entity directly. Introducing a repository interface also created a clearer separation between HTTP request handling and database access. Registering the repository through Dependency Injection reinforced how ASP.NET Core resolves and supplies application dependencies at runtime.
+
+Testing the endpoint in Swagger and then verifying the database record directly provided stronger evidence than relying on a successful build or HTTP response alone. The Employer vertical slice is still in progress because the remaining GET, PUT, and DELETE operations, validation, error handling, and final review have not yet been completed.
+
+### Questions to Review
+
+- Why should an API use DTOs instead of exposing Entity Framework Core entities directly?
+- What problem does the repository interface solve?
+- How does ASP.NET Core Dependency Injection resolve the repository implementation?
+- What responsibilities should remain in the controller?
+- Why is direct PostgreSQL verification useful after testing an endpoint in Swagger?
+- What is the difference between verifying that an API builds and verifying that it works end to end?
