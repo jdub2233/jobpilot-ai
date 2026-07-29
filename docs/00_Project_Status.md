@@ -1,35 +1,35 @@
 ## Current Sprint
 
-Sprint 0
+Sprint 1
 
 ## Current Day
 
-Day 7
+Day 8
 
 ## Current Phase
 
-Foundation & Planning
+Phase 2 – Core Application Development
 
 ## Current Milestone
 
-Complete the initial Entity Framework Core domain model implementation.
+Implement the Employer API vertical slice.
 
 ## Completed Milestones
 
-- Implement all five core Entity Framework Core domain entities
-- Configure entity relationships using Fluent API
-- Configure delete behaviors
-- Configure database column lengths and decimal precision
-- Generate and apply the complete Entity Framework Core migration
-- Verify the PostgreSQL schema directly using psql
+- Completed Phase 1 – Foundation & Planning
+- Completed the initial Entity Framework Core domain model
+- Configured all entity relationships and delete behaviors
+- Generated and applied the complete database migration
+- Verified the PostgreSQL schema using psql
+- Completed Sprint 0 documentation closeout
 
 ## Current Task
 
-Sprint 0 documentation closeout and prepare for API development.
+Prepare and begin implementation of the Employer API vertical slice.
 
 ## Next Task
 
-Begin implementing the first vertical slice by creating the Employer API (DTOs, repository, controller, CRUD endpoints, and Swagger testing).
+Create Employer DTOs, repository, controller, CRUD endpoints, and verify them using Swagger.
 
 ## Blockers
 
@@ -37,4 +37,4 @@ None
 
 ## Last Updated
 
-2026-07-27
+2026-07-28
