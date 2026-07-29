@@ -4,7 +4,7 @@ Sprint 1
 
 ## Current Day
 
-Day 8
+Day 9
 
 ## Current Phase
 
@@ -22,14 +22,34 @@ Implement the Employer API vertical slice.
 - Generated and applied the complete database migration
 - Verified the PostgreSQL schema using psql
 - Completed Sprint 0 documentation closeout
+- Implemented the initial Employer API vertical slice:
+  - Employer DTOs
+  - Repository interface
+  - Repository implementation
+  - Dependency Injection registration
+  - Employer controller
+  - Swagger/OpenAPI configuration
+  - POST `/api/Employers`
+  - Verified end-to-end persistence using PostgreSQL
 
 ## Current Task
 
-Prepare and begin implementation of the Employer API vertical slice.
+Complete the remaining Employer CRUD endpoints:
+
+- GET `/api/Employers`
+- GET `/api/Employers/{id}`
+- PUT `/api/Employers/{id}`
+- DELETE `/api/Employers/{id}`
 
 ## Next Task
 
-Create Employer DTOs, repository, controller, CRUD endpoints, and verify them using Swagger.
+Complete the Employer API vertical slice by:
+
+- Testing all CRUD endpoints using Swagger
+- Refactoring DTO mapping
+- Adding request validation
+- Improving error handling
+- Reviewing the completed API before beginning the JobPosition vertical slice
 
 ## Blockers
 
@@ -37,4 +57,4 @@ None
 
 ## Last Updated
 
-2026-07-28
+2026-07-29
