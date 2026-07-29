@@ -2,7 +2,7 @@
 
 # Weekly Engineering Plan
 
-**Sprint:** Sprint 0  
+**Sprint:** Sprint 1  
 **Week:** July 27 – August 2
 
 ---
