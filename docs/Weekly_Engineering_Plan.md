@@ -22,10 +22,13 @@
 - Complete small coding exercises to reinforce concepts
 
 ## JobPilot AI
-- Complete Sprint 0 documentation closeout
-- Begin implementation of the Employer API vertical slice.
-- Keep project documentation up to date
 
+- ✅ Completed Sprint 0 documentation closeout
+- ✅ Began implementation of the Employer API vertical slice
+- Complete the remaining Employer CRUD endpoints
+- Verify all endpoints using Swagger
+- Review and refactor the completed API
+- Keep project documentation up to date
 ---
 
 # Success Criteria
@@ -200,7 +203,9 @@ Review:
 
 Prepare goals for next week:
 
-- Continue Employer API implementation and complete CRUD endpoints.
+- Complete the Employer API vertical slice
+- Add validation and improve API error handling
+- Begin the JobPosition API vertical slice
 - Continue AWS course (Security Groups, EBS, or next section)
 - Keep documentation aligned with implementation
 
@@ -208,7 +213,7 @@ Prepare goals for next week:
 
 # Weekly Focus
 
-This week emphasizes strengthening foundational knowledge before beginning the first API vertical slice.
+The goal is to complete the first production-inspired REST API vertical slice while continuing AWS EC2 study and strengthening C# fundamentals.
 
 ## Primary Focus
 
