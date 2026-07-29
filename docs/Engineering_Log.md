@@ -280,3 +280,75 @@ Begin implementation of the Employer vertical slice:
 - CRUD API
 - Swagger testing
 
+# Engineering Log
+
+---
+
+## 2026-07-28 — Sprint 1 Day 9
+
+### Milestone
+
+Implement the initial Employer API vertical slice.
+
+### Objectives
+
+- Create the Employer DTOs.
+- Implement the Employer repository pattern.
+- Register repository services using Dependency Injection.
+- Create the Employer API controller.
+- Configure Swagger/OpenAPI for API testing.
+- Implement the Employer create endpoint.
+- Verify end-to-end persistence using PostgreSQL.
+
+### Work Completed
+
+- Created the Employer request and response DTOs.
+- Created the `IEmployerRepository` interface.
+- Implemented the `EmployerRepository` using Entity Framework Core.
+- Registered the repository with the ASP.NET Core Dependency Injection container.
+- Created the `EmployersController`.
+- Configured Swagger/OpenAPI for interactive API testing.
+- Implemented the initial Employer create endpoint:
+  - `POST /api/Employers`
+- Mapped the incoming DTO to the Employer domain entity.
+- Persisted Employer records using Entity Framework Core and `JobPilotDbContext`.
+- Verified successful end-to-end persistence by creating Employer records through Swagger and confirming the data in PostgreSQL.
+
+### Architecture Decisions
+
+- Continue using DTOs to separate the public API contract from Entity Framework Core entities.
+- Introduce the repository pattern to isolate data-access logic from controller responsibilities.
+- Register repositories through Dependency Injection to promote loose coupling and maintainability.
+- Implement the API incrementally using vertical slices, completing one feature from HTTP request through database persistence before adding additional endpoints.
+- Use Swagger as the primary tool for early API verification before introducing a frontend client.
+
+### Verification
+
+- ✅ Solution builds successfully.
+- ✅ Application starts successfully.
+- ✅ Swagger/OpenAPI loads correctly.
+- ✅ `POST /api/Employers` executes successfully.
+- ✅ Employer records are persisted through Entity Framework Core.
+- ✅ Data verified directly in PostgreSQL.
+- ✅ End-to-end request flow confirmed from API request to database persistence.
+
+### Lessons Learned
+
+- DTOs provide a stable API contract while keeping persistence models internal to the application.
+- The repository pattern creates a cleaner separation between the API layer and data-access layer.
+- ASP.NET Core Dependency Injection simplifies dependency management and improves maintainability.
+- Swagger provides a fast and reliable way to validate API behavior before a frontend exists.
+- Verifying database changes after API testing provides confidence that the complete application pipeline is functioning correctly.
+
+### Next Task
+
+Complete the remaining Employer CRUD functionality:
+
+- Implement `GET /api/Employers`
+- Implement `GET /api/Employers/{id}`
+- Implement `PUT /api/Employers/{id}`
+- Implement `DELETE /api/Employers/{id}`
+- Add request validation.
+- Improve API error handling.
+- Perform complete CRUD verification using Swagger.
+
